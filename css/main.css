@@ -178,4 +178,39 @@ html, body {
   font-weight: normal;
   margin-bottom: 0px;
 }
+
+.services {
+  background-color: #f2f3f5;
+  margin-bottom: 16px;
+  padding: 24px 0px;
+}
+
+.services .services__item {
+  padding: 24px;
+  border: 1px solid #e8e9eb;
+  background: #fff;
+  height: 100%;
+}
+
+.services .services__item .service__icon {
+  margin-right: 16px;
+}
+
+.services .services__item .service__content {
+  padding-top: 5px;
+}
+
+.services .services__item .service__content p:first-child {
+  color: #29303b;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.services .services__item .service__content p:last-child {
+  color: #686f7a;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
 /*# sourceMappingURL=main.css.map */
