@@ -1,0 +1,94 @@
+.header__left{
+    display: flex;
+    align-items: center;
+    @include styleText($color-black-light,$fs-1,$fw-normal);
+    .navbar-brand{
+        flex-grow: 0;
+        img{
+            width: 110px;
+        }
+    }
+    .header__cate{
+        flex-grow: 0;
+        margin-right: 5px;
+    }
+    .header__form{
+        flex-grow: 1;
+        .form-control{
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus{
+                box-shadow: none;
+                background-color: $color-white-0;
+                border: 1px solid $color-gray-6;
+                border-right-color: $color-trans;
+            }
+            &:focus + .input-group-append{
+                .input-group-text{
+                    color: $color-red-0;
+                    background-color: $color-white-0;
+                    border: 1px solid $color-gray-6;
+                    border-left-color: $color-trans;
+                }
+                &:hover{
+                    .input-group-text{
+                        color: $color-white-0;
+                        background-color: $color-red-0;
+                    }
+                }
+            }
+        }
+        .input-group-append{
+            margin-left: 0px;
+            cursor: pointer;
+            .input-group-text{
+                background-color: $color-gray-1;
+                border: none;
+                border-right: 1px solid $color-gray-1;
+                color: $color-red-0;
+            }
+            &:hover{
+                .input-group-text{
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+    }
+}
+.header__right{
+    .navbar-nav{
+        justify-content: space-between;
+        .nav-item{
+            align-self: center;
+            .nav-link{
+                @include styleText($color-black-light,$fs-1,$fw-normal);
+                
+            }
+            &:hover{
+                background-color: $color-gray-1;
+                
+            }
+        }
+        .nav-item:nth-child(3){
+            border-radius: 50%;
+            
+        }
+    }
+    
+    
+    
+}
+
+
+// responsive
+@include responsive("extra-large"){
+    .header__right{
+        .navbar-nav{
+            .business,.teach{
+                display: none;
+            }
+        }
+    }
+}
