@@ -213,4 +213,72 @@ html, body {
   font-weight: normal;
   margin-bottom: 0px;
 }
+
+.topCategories {
+  margin: 25px;
+  padding: 0px 16px;
+}
+
+.topCategories .title {
+  color: #29303b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.topCategories .cate__item .cate {
+  padding: 15px;
+  margin: 8px 0px;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  box-shadow: none;
+}
+
+.topCategories .cate__item .cate::before, .topCategories .cate__item .cate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: .2s ease;
+  pointer-events: none;
+}
+
+.topCategories .cate__item .cate::before {
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  opacity: 1;
+}
+
+.topCategories .cate__item .cate::after {
+  opacity: 0;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+}
+
+.topCategories .cate__item .cate:hover::before {
+  opacity: 0;
+}
+
+.topCategories .cate__item .cate:hover::after {
+  opacity: 1;
+}
+
+.topCategories .cate__item .cate a {
+  text-decoration: none;
+  display: flex;
+}
+
+.topCategories .cate__item .cate a .cate__icon {
+  color: #14171c;
+  font-size: 32px;
+  font-weight: 600;
+  padding-right: 16px;
+}
+
+.topCategories .cate__item .cate a .cate__text {
+  color: #14171c;
+  font-size: 15px;
+  font-weight: normal;
+  align-self: center;
+}
 /*# sourceMappingURL=main.css.map */
