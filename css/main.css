@@ -137,4 +137,45 @@ html, body {
     display: none;
   }
 }
+
+.intro {
+  background: linear-gradient(to right, #6e1a52, #ec5252);
+}
+
+.intro .intro__content {
+  margin: 0px 25px;
+}
+
+.intro .intro__content .intro__item {
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro .intro__content .intro__item .icon {
+  color: #fff;
+  font-size: 47px;
+  font-weight: normal;
+  margin-right: 16px;
+  margin-top: -2px;
+}
+
+.intro .intro__content .intro__item .icon__content {
+  padding-top: 5px;
+}
+
+.intro .intro__content .intro__item .icon__content p:first-child {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.intro .intro__content .intro__item .icon__content p:last-child {
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
 /*# sourceMappingURL=main.css.map */
