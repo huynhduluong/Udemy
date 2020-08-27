@@ -36,6 +36,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%,-50%);
+                    
                 }
             }
         }
@@ -48,14 +49,23 @@
 
 // responsive
 @include responsive("large"){
-    .banner__item{
-        position: relative;
-        .getStarted{
-            position: absolute;
-            padding-top: 360px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+    // .banner__item{
+    //     position: relative;
+    //     .getStarted{
+    //         position: absolute;
+    //         padding-top: 360px;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%,-50%);
+    //     }
+    // }
+    .banner{
+        .banner__content{
+            .banner__item{
+                i{
+                    visibility: hidden;
+                }
+            }
         }
     }
 }
