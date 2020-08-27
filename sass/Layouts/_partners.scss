@@ -1,0 +1,48 @@
+.partners{
+    background-color: $color-gray-5;
+    .partner__top{
+        text-align: center;
+        padding-bottom: 24px;
+        .text{
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+            padding-top: $pd-2 - 4;
+        }
+        .partner__logos{
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 32px;
+            justify-content: center;
+            .logo__item{
+                display: block;
+                margin: 0px 32px 8px;
+            }
+        }
+    }
+    .partner__bottom{
+        padding-bottom: 22px;
+        .item{
+            display: block;
+            padding: 28px 30px;
+            text-align: center;
+            p{
+                @include styleText($color-black-0,$fs-0 + 1,$fw-normal);
+                padding-top: 3px;
+                max-width: 400px;
+                margin: 0px auto;
+            }
+            p:first-child{                
+                a{
+                    text-decoration: none;
+                    @include styleText($color-black-light,$fs-2 - 1,$fw-bold-1);
+                }
+            }
+            button{
+                margin-top: 15px;
+            }
+            
+        }
+        .item:first-child{
+            border-right: 1px solid $color-gray-6;
+        }
+    }
+}

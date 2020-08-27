@@ -282,6 +282,68 @@ html, body {
   align-self: center;
 }
 
+.partners {
+  background-color: #F7F8FA;
+}
+
+.partners .partner__top {
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.partners .partner__top .text {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  padding-top: 16px;
+}
+
+.partners .partner__top .partner__logos {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 32px;
+  justify-content: center;
+}
+
+.partners .partner__top .partner__logos .logo__item {
+  display: block;
+  margin: 0px 32px 8px;
+}
+
+.partners .partner__bottom {
+  padding-bottom: 22px;
+}
+
+.partners .partner__bottom .item {
+  display: block;
+  padding: 28px 30px;
+  text-align: center;
+}
+
+.partners .partner__bottom .item p {
+  color: #29303b;
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 3px;
+  max-width: 400px;
+  margin: 0px auto;
+}
+
+.partners .partner__bottom .item p:first-child a {
+  text-decoration: none;
+  color: #505763;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.partners .partner__bottom .item button {
+  margin-top: 15px;
+}
+
+.partners .partner__bottom .item:first-child {
+  border-right: 1px solid #dedfe0;
+}
+
 footer .footer__top {
   padding: 0px 20px;
   margin-top: 40px;
@@ -409,6 +471,10 @@ footer .footer__bottom .term ul li a:hover {
   color: #003845;
   font-size: 13px;
   font-weight: normal;
+}
+
+footer hr {
+  margin: 0px;
 }
 
 footer hr.hr__style {
