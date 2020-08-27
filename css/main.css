@@ -214,6 +214,77 @@ html, body {
   margin-bottom: 0px;
 }
 
+.banner {
+  margin-bottom: 32px;
+}
+
+.banner .top__border {
+  background: linear-gradient(-45deg, #ec5252, #6e1a52);
+  height: 8px;
+}
+
+.banner .banner__content {
+  background-color: #29303b;
+  color: #fff;
+  align-items: center;
+  height: 360px;
+  text-align: center;
+}
+
+.banner .banner__content .banner__item {
+  padding: 0px;
+  justify-self: center;
+}
+
+.banner .banner__content .banner__item i {
+  font-size: 32px;
+  font-weight: 600;
+  justify-items: center;
+}
+
+.banner .banner__content .banner__item .getStarted h4 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+
+.banner .banner__content .banner__item .getStarted p {
+  margin-bottom: 25px;
+  color: #F7F8FA;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.banner .banner__content .banner__item .getStarted__out {
+  position: relative;
+}
+
+.banner .banner__content .banner__item .getStarted__out i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner .banner__content .banner__item:first-child, .banner .banner__content .banner__item:last-child {
+  padding: 44px 0px 32px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner__item {
+    position: relative;
+  }
+  .banner__item .getStarted {
+    position: absolute;
+    padding-top: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .topCategories {
   margin: 25px;
   padding: 0px 16px;
