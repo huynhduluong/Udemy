@@ -281,4 +281,138 @@ html, body {
   font-weight: normal;
   align-self: center;
 }
+
+footer .footer__top {
+  padding: 0px 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+footer .footer__top .left ul.footer__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 110px;
+  list-style: none;
+  margin: 0px;
+}
+
+footer .footer__top .left ul.footer__links li {
+  padding-bottom: 5px;
+}
+
+footer .footer__top .left ul.footer__links li a {
+  color: #007791;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+footer .footer__top .left ul.footer__links li a:hover {
+  color: #003845;
+}
+
+footer .footer__top .left ul.footer__links li.highlight a {
+  color: #007791;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+footer .footer__top .right ul.dropdown-menu {
+  transform: translate3d(0px, -516px, 0px) !important;
+}
+
+footer .footer__top .right ul.dropdown-menu li > a {
+  text-decoration: none;
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+  display: block;
+  padding: 5px 12px;
+}
+
+footer .footer__top .right ul.dropdown-menu li > a:hover {
+  background-color: #f2f3f5;
+}
+
+footer .footer__top .right button.btn {
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 10px 10px;
+  border-radius: 2px;
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 700;
+  padding-right: 26px;
+}
+
+footer .footer__top .right button.btn i {
+  margin: 0px 10px;
+}
+
+footer .footer__top .right button.btn span {
+  margin-right: 10px;
+}
+
+footer .footer__top .right button.btn:hover {
+  border-color: #29303b;
+  color: #29303b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+footer .footer__top .right button.btn:focus {
+  box-shadow: none;
+  background-color: #f2f3f5;
+}
+
+footer .footer__bottom {
+  padding: 30px 20px;
+}
+
+footer .footer__bottom .copyright {
+  display: flex;
+}
+
+footer .footer__bottom .copyright a {
+  margin-right: 25px;
+}
+
+footer .footer__bottom .copyright a img {
+  width: 110px;
+}
+
+footer .footer__bottom .copyright p {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  padding-top: 6px;
+}
+
+footer .footer__bottom .term ul {
+  list-style: none;
+}
+
+footer .footer__bottom .term ul li {
+  display: inline-block;
+  padding: 6px;
+}
+
+footer .footer__bottom .term ul li a {
+  text-decoration: none;
+  color: #007791;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer .footer__bottom .term ul li a:hover {
+  color: #003845;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+footer hr.hr__style {
+  margin: 0px;
+  border-top: 6px solid #ec5252 !important;
+}
 /*# sourceMappingURL=main.css.map */
