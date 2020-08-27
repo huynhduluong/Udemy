@@ -1,0 +1,73 @@
+.udeCarousel{
+    background-image: url('../img/cover.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .udeCarousel__content{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        max-width: 460px;
+        h1{
+            @include styleText($color-white-0, $fs-4, $fw-bold);
+            margin-bottom: $mg-1;
+        }
+        p{
+            @include styleText($color-white-0, $fs-2 - 2, $fw-normal);
+            margin-bottom: $mg-2 - 5;
+        }
+        .input-group{
+            .form-control{
+                padding: $pd-2;
+                border-radius: 0px;
+                border: none;
+                @include styleText($color-black-0, $fs-2, $fw-normal);
+                &::placeholder{
+                    @include styleText($color-gray-2, $fs-2, $fw-normal);
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .input-group-append{
+                .input-group-text{
+                    background-color: $color-white-0;
+                    color: $color-red-0;
+                    padding: $pd-1 $pd-2;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: $border-radius;
+                }
+                &:hover{
+                    .input-group-text{
+                        background-color: $color-red-0;
+                        color: $color-white-0;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+// responsive
+@include responsive("small"){
+    .udeCarousel{
+        .udeCarousel__content{
+            max-width: 60%;
+            h1{
+                @include styleText($color-white-0, $fs-3, $fw-normal);
+            }
+            .input-group{
+                .form-control{                    
+                    @include styleText($color-black-0, $fs-0, $fw-normal);
+                    &::placeholder{
+                        @include styleText($color-gray-2, $fs-0, $fw-normal);
+                    }
+                }
+            }
+        }
+    }
+}

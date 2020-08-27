@@ -138,6 +138,90 @@ html, body {
   }
 }
 
+.udeCarousel {
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.udeCarousel .udeCarousel__content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  max-width: 460px;
+}
+
+.udeCarousel .udeCarousel__content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.udeCarousel .udeCarousel__content p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.udeCarousel .udeCarousel__content .input-group .form-control {
+  padding: 20px;
+  border-radius: 0px;
+  border: none;
+  color: #29303b;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.udeCarousel .udeCarousel__content .input-group .form-control::placeholder {
+  color: #a1a7b3;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.udeCarousel .udeCarousel__content .input-group .form-control:focus {
+  box-shadow: none;
+}
+
+.udeCarousel .udeCarousel__content .input-group .input-group-append .input-group-text {
+  background-color: #fff;
+  color: #ec5252;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+
+.udeCarousel .udeCarousel__content .input-group .input-group-append:hover .input-group-text {
+  background-color: #ec5252;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .udeCarousel .udeCarousel__content {
+    max-width: 60%;
+  }
+  .udeCarousel .udeCarousel__content h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .udeCarousel .udeCarousel__content .input-group .form-control {
+    color: #29303b;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .udeCarousel .udeCarousel__content .input-group .form-control::placeholder {
+    color: #a1a7b3;
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
+
 .intro {
   background: linear-gradient(to right, #6e1a52, #ec5252);
 }
