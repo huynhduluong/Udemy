@@ -41,3 +41,19 @@
         right: -2%;
     }
 }
+.feedback__item.owl-carousel{
+    .owl-item{
+        cursor: auto;
+        box-shadow: none;
+        &:hover{
+            box-shadow: none;
+        }
+    }
+    .owl-prev, .owl-next{
+        left: -2%;
+    }
+    .owl-next{
+        left: unset;
+        right: -2%;
+    }
+}

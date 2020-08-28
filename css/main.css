@@ -62,6 +62,24 @@ html, body {
   right: -2%;
 }
 
+.feedback__item.owl-carousel .owl-item {
+  cursor: auto;
+  box-shadow: none;
+}
+
+.feedback__item.owl-carousel .owl-item:hover {
+  box-shadow: none;
+}
+
+.feedback__item.owl-carousel .owl-prev, .feedback__item.owl-carousel .owl-next {
+  left: -2%;
+}
+
+.feedback__item.owl-carousel .owl-next {
+  left: unset;
+  right: -2%;
+}
+
 .udeBTN-red {
   background-color: #ec5252;
   border: 1px solid #ec5252;
@@ -663,6 +681,52 @@ html, body {
   font-size: 15px;
   font-weight: normal;
   align-self: center;
+}
+
+.feedback {
+  background: #F7F8FA;
+}
+
+.feedback .feedback__content {
+  width: 96%;
+  margin: 0px auto;
+  padding: 32px 16px;
+}
+
+.feedback .feedback__content h3 {
+  color: #29303b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.feedback .feedback__content .feedback__item .card {
+  padding: 32px;
+  min-height: 260px;
+}
+
+.feedback .feedback__content .feedback__item .card .title {
+  margin-bottom: 13px;
+  display: flex;
+}
+
+.feedback .feedback__content .feedback__item .card .title img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.feedback .feedback__content .feedback__item .card .title span {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.feedback .feedback__content .feedback__item .card p {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .partners {
