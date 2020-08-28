@@ -145,9 +145,22 @@ html, body {
   width: 110px;
 }
 
-.header__left .header__cate {
+.header__left span.header__cate {
   flex-grow: 0;
   margin-right: 5px;
+  padding: 10px 12px;
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.header__left span.header__cate i {
+  margin-right: 2px;
+}
+
+.header__left span.header__cate:hover {
+  background-color: rgba(20, 23, 28, 0.051);
 }
 
 .header__left .header__form {
@@ -158,6 +171,7 @@ html, body {
   background-color: rgba(20, 23, 28, 0.051);
   border: none;
   transition: none;
+  padding: 12px 15px;
 }
 
 .header__left .header__form .form-control:focus {
@@ -208,19 +222,49 @@ html, body {
   color: #505763;
   font-size: 13px;
   font-weight: normal;
+  padding: 10px 15px;
 }
 
 .header__right .navbar-nav .nav-item:hover {
   background-color: rgba(20, 23, 28, 0.051);
+  border-radius: 2px;
 }
 
 .header__right .navbar-nav .nav-item:nth-child(3) {
   border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.header__right .navbar-nav .nav-item:nth-child(3) .nav-link {
+  padding: 0;
+}
+
+.header__right .navbar-nav .nav-item:nth-child(3) .nav-link i {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1200px) {
   .header__right .navbar-nav .business, .header__right .navbar-nav .teach {
     display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .col-md-8 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__middle {
+    display: flex;
+    justify-content: center;
+  }
+  .header__middle img {
+    width: 110px;
   }
 }
 
