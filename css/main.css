@@ -50,7 +50,16 @@ html, body {
 
 .owl-next {
   left: unset;
-  right: -4%;
+  right: -3%;
+}
+
+.student__course.owl-carousel .owl-prev, .student__course.owl-carousel .owl-next {
+  left: -2%;
+}
+
+.student__course.owl-carousel .owl-next {
+  left: unset;
+  right: -2%;
 }
 
 .udeBTN-red {
@@ -454,6 +463,74 @@ html, body {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 0px;
+}
+
+.students {
+  width: 90%;
+  margin: 25px auto;
+}
+
+.students .student__content h3 {
+  margin-bottom: 10px;
+  color: #505763;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.students .student__content .student__course .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.students .student__content .student__course .card-text {
+  color: #686f7a;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+
+.students .student__content .student__course .rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.students .student__content .student__course .rating .rating__star {
+  color: #F4C150;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+.students .student__content .student__course .rating span:nth-child(2) {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.students .student__content .student__course .rating span:last-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.students .student__content .student__course .price {
+  text-align: right;
+}
+
+.students .student__content .student__course .price .old__price {
+  color: #29303b;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.students .student__content .student__course .price .new__price {
+  color: #29303b;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .banner {

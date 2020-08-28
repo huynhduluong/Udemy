@@ -29,5 +29,15 @@
 }
 .owl-next{
     left: unset;
-    right: -4%;
+    right: -3%;
+}
+
+.student__course.owl-carousel{
+    .owl-prev, .owl-next{
+        left: -2%;
+    }
+    .owl-next{
+        left: unset;
+        right: -2%;
+    }
 }
