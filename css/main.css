@@ -296,7 +296,8 @@ html, body {
 }
 
 .intro .intro__content {
-  margin: 0px 25px;
+  width: 95%;
+  margin: 0px auto;
 }
 
 .intro .intro__content .intro__item {
@@ -304,6 +305,8 @@ html, body {
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 1.2;
+  justify-content: center;
+  text-align: center;
 }
 
 .intro .intro__content .intro__item .icon {
