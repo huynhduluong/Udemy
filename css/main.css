@@ -53,6 +53,14 @@ html, body {
   right: -3%;
 }
 
+.owl-dots button.owl-dot {
+  outline: none;
+}
+
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
 .student__course.owl-carousel .owl-prev, .student__course.owl-carousel .owl-next {
   left: -2%;
 }
@@ -78,6 +86,15 @@ html, body {
 .feedback__item.owl-carousel .owl-next {
   left: unset;
   right: -2%;
+}
+
+.service__carousel.owl-carousel .owl-item {
+  cursor: auto;
+  box-shadow: none;
+}
+
+.service__carousel.owl-carousel .owl-item:hover {
+  box-shadow: none;
 }
 
 .udeBTN-red {
@@ -462,10 +479,15 @@ html, body {
   border: 1px solid #e8e9eb;
   background: #fff;
   height: 100%;
+  min-height: 165px;
 }
 
 .services .services__item .service__icon {
   margin-right: 16px;
+}
+
+.services .services__item .service__icon img {
+  width: 42px;
 }
 
 .services .services__item .service__content {
@@ -484,6 +506,17 @@ html, body {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .services .services__item {
+    min-height: 235px;
+    text-align: center;
+  }
+  .services .services__item .service__icon {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .students {

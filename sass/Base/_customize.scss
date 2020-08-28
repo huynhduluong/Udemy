@@ -31,6 +31,14 @@
     left: unset;
     right: -3%;
 }
+.owl-dots{
+    button.owl-dot{
+        outline: none;
+        &:focus{
+            outline: none;
+        }
+    }
+}
 
 .student__course.owl-carousel{
     .owl-prev, .owl-next{
@@ -55,5 +63,15 @@
     .owl-next{
         left: unset;
         right: -2%;
+    }
+}
+
+.service__carousel.owl-carousel{
+    .owl-item{
+        cursor: auto;
+        box-shadow: none;
+        &:hover{
+            box-shadow: none;
+        }
     }
 }

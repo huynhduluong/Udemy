@@ -1127,8 +1127,8 @@
     <section class="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 px-2">
-                    <div class="services__item d-flex">
+                <div class="service__carousel owl-carousel owl-theme">
+                    <div class="services__item d-block d-lg-flex ">
                         <div class="service__icon">
                             <img src="./img/service_icon_1.svg" alt="">
                         </div>
@@ -1137,9 +1137,7 @@
                             <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 px-2">
-                    <div class="services__item d-flex">
+                    <div class="services__item d-block d-lg-flex ">
                         <div class="service__icon">
                             <img src="./img/service_icon_2.svg" alt="">
                         </div>
@@ -1148,9 +1146,7 @@
                             <p>Select from top instructors around the world</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 px-2">
-                    <div class="services__item d-flex">
+                    <div class="services__item d-block d-lg-flex ">
                         <div class="service__icon">
                             <img src="./img/service_icon_3.svg" alt="">
                         </div>
@@ -1160,6 +1156,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         
@@ -1694,7 +1691,7 @@
     <script>
         $('.student__course').owlCarousel({
             loop:true,
-            margin:10,
+            margin: 10,
             nav:true,
             dots: false,
             responsive:{
@@ -1702,6 +1699,9 @@
                     items:1
                 },
                 500:{
+                    items:2
+                },
+                768:{
                     items:3
                 },
                 992:{
@@ -1724,12 +1724,37 @@
             dots: false,
             responsive:{
                 0:{
+                    items:1,
+                    nav:false,
+                    dots: true,
+                },
+                576:{
+                    items:2,
+                    
+                },
+                992:{
+                    items:3
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.service__carousel').owlCarousel({
+            loop:false,
+            margin:16,
+            nav:false,
+            dots: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                500:{
                     items:1
                 },
                 576:{
                     items:2
                 },
-                992:{
+                768:{
                     items:3
                 }
             }
@@ -1746,6 +1771,9 @@
                     items:1
                 },
                 500:{
+                    items:2
+                },
+                768:{
                     items:3
                 },
                 1200:{
