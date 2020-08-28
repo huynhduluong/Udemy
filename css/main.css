@@ -11,6 +11,48 @@ html, body {
   font-weight: normal;
 }
 
+.owl-item {
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+
+.owl-item:hover {
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 33%;
+  left: -3%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background: #fff !important;
+  z-index: 3;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  transition: all 0.3s;
+}
+
+.owl-prev span, .owl-next span {
+  color: #007791;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 0.6;
+}
+
+.owl-prev:focus, .owl-next:focus {
+  outline: none;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+}
+
+.owl-next {
+  left: unset;
+  right: -4%;
+}
+
 .udeBTN-red {
   background-color: #ec5252;
   border: 1px solid #ec5252;
@@ -261,6 +303,122 @@ html, body {
   font-size: 15px;
   font-weight: normal;
   margin-bottom: 0px;
+}
+
+.courses {
+  margin-top: 25px;
+}
+
+.courses .courses__content {
+  width: 90%;
+  margin: auto;
+}
+
+.courses .courses__content .course__intro {
+  margin-bottom: 28px;
+  background-color: #F7F8FA;
+}
+
+.courses .courses__content .course__intro .course__text {
+  justify-content: center;
+  align-self: center;
+}
+
+.courses .courses__content .course__intro .course__text h2 {
+  color: #29303b;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.courses .courses__content .course__intro .course__text p {
+  color: #29303b;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.courses .myTab .nav {
+  justify-content: space-between;
+  border: none;
+  flex-wrap: nowrap;
+}
+
+.courses .myTab .nav .nav-item:hover .nav-link {
+  border: none;
+}
+
+.courses .myTab .nav .nav-item .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
+.courses .myTab .nav .nav-item .nav-link {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+  border: none;
+  word-wrap: break-word !important;
+}
+
+.courses .myTab .tab-content {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 28px;
+}
+
+.courses .myTab .tab-content .card-title {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.courses .myTab .tab-content .card-text {
+  color: #686f7a;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+
+.courses .myTab .tab-content .rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.courses .myTab .tab-content .rating .rating__star {
+  color: #F4C150;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 2px;
+}
+
+.courses .myTab .tab-content .rating span:nth-child(2) {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.courses .myTab .tab-content .rating span:last-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.courses .myTab .tab-content .price {
+  text-align: right;
+}
+
+.courses .myTab .tab-content .price .old__price {
+  color: #29303b;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.courses .myTab .tab-content .price .new__price {
+  color: #29303b;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .services {
